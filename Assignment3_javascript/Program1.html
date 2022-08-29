@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<head>
+    <h1>Sum of 2 Numbers</h1>
+    <body>
+        <p id="result"></p>
+        <br>
+        Number 1:
+        <input id="number1" type ="text" Number1>
+        <br>
+
+        <br>Number2 :
+       <input id="number2" type ="text" > 
+       <br>
+       <br>
+       <button type="button" onclick="sumofNumbers()">Calculate</button>
+        <script>
+            function sumofNumbers(){
+                let num1=0,num2=0,result
+                while(isNaN(result)){
+                   num1 =parseInt(document.getElementById("number1").value)
+                   
+                    num2=parseInt(document.getElementById("number2").value)
+                   if( isNaN(num1) || isNaN(num2)){
+
+                        alert("Please enter valid numbers");
+                    } 
+                    else{
+                    result=num1+num2
+                    document.getElementById("result").innerText="The Sum of the number is "+ result}
+                    break
+                }
+            }
+        </script>
+    </body>
+</head>
