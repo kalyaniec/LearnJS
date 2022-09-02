@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<header>
+<h1>Marriage age calculator</h1><br>
+</header>
+<body>
+   <br> <label>Please enter age</label><br>
+   <br><input id="inputbox" type="text" ><br><br>
+   <button id="button" onclick="marriageAgecalculator()"></button>
+    <p id="p01"></p>
+    <script>
+        function marriageAgecalculator(){
+       
+            while(true){
+                 try{
+
+                if(document.getElementById('inputbox').value<21){
+                     alert("Please have patience")
+                     
+                    throw ("Please have patience")
+                   
+                    }
+
+                    else{
+                        alert("Eligible");
+                        break
+                    }
+    
+    }
+
+
+        catch(err){
+           input = prompt("Please enter valid age");  
+            document.getElementById('inputbox').value = parseInt(input);
+            
+           
+        }}
+      
+  
+
+}
+    
+            
+        
+        
+    </script>
+</body>
